@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prepify</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Prepify home">
+        <span class="brand-mark">🍱</span>
+        <span class="brand-name">Prepify</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="browse_recipes.html">Recipes</a>
+        <a href="meal_planner.html">Meal Planner</a>
+        <a href="grocery_list.html">Grocery List</a>
+      </nav>
+
+      <div class="nav-actions" aria-label="Quick actions">
+        <a class="icon-button" href="saved_recipes.html" aria-label="Saved recipes">♡</a>
+        <a class="icon-button" href="about.html" aria-label="About Prepify">📖</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Weekly meal inspiration</p>
+          <h1>Discover recipes that fit your week</h1>
+          <p class="hero-subtitle">Meal ideas for breakfast, lunch &amp; dinner</p>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="cloud cloud-left"></div>
+          <div class="cloud cloud-right"></div>
+
+          <div class="hero-board">
+            <div class="sticky sticky-breakfast">BREAKFAST</div>
+            <div class="sticky sticky-lunch">LUNCH</div>
+            <div class="sticky sticky-dinner">DINNER</div>
+          </div>
+
+          <div class="hero-plate toast-plate">
+            <span>🍞</span>
+          </div>
+          <div class="hero-plate bowl-plate">
+            <span>🥗</span>
+          </div>
+          <div class="hero-plate prep-plate">
+            <span>🍳</span>
+          </div>
+          <div class="hero-bottle">🫒</div>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="left-column">
+          <section class="panel">
+            <div class="section-heading">
+              <h2>Featured Recipes</h2>
+              <div class="slider-arrows" aria-hidden="true">
+                <span>‹</span>
+                <span>›</span>
+              </div>
+            </div>
+
+            <div class="recipe-strip">
+              <article class="recipe-card featured-card">
+                <div class="recipe-image image-pesto"></div>
+                <div class="recipe-content">
+                  <span class="recipe-badge">Quick &amp; Easy</span>
+                  <h3>Chicken Pesto Pasta</h3>
+                  <p>Dinner · 25 min · Serves 2</p>
+                  <div class="tag-row">
+                    <span>High Protein</span>
+                    <span>Quick Meal</span>
+                  </div>
+                  <div class="card-actions">
+                    <a href="meal_planner.html" class="button primary">Add to Planner</a>
+                    <a href="saved_recipes.html" class="button secondary">Save</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="recipe-card compact-card">
+                <div class="recipe-image image-pancakes"></div>
+                <div class="compact-copy">
+                  <h3>Banana Oat Pancakes</h3>
+                  <p>15 Min</p>
+                </div>
+              </article>
+
+              <article class="recipe-card compact-card">
+                <div class="recipe-image image-alfredo"></div>
+                <div class="compact-copy">
+                  <h3>Chicken Alfredo</h3>
+                  <p>27 Min</p>
+                </div>
+              </article>
+
+              <article class="recipe-card compact-card">
+                <div class="recipe-image image-salmon"></div>
+                <div class="compact-copy">
+                  <h3>Meal Prep Salmon</h3>
+                  <p>1h 10min</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="panel planner-panel">
+            <div class="section-heading">
+              <h2>Plan Your Week</h2>
+            </div>
+
+            <div class="planner-grid">
+              <article class="planner-day">
+                <h3>Monday</h3>
+                <p>Crêpes</p>
+                <div class="mini-meal mini-crepes"></div>
+              </article>
+
+              <article class="planner-day">
+                <h3>Tuesday</h3>
+                <p>Banana Oat Pancakes</p>
+                <div class="mini-meal mini-pancakes"></div>
+              </article>
+
+              <article class="planner-day">
+                <h3>Wednesday</h3>
+                <p>Grilled Potatoes</p>
+                <div class="mini-meal mini-potatoes"></div>
+              </article>
+
+              <article class="planner-day">
+                <h3>Thursday</h3>
+                <p>Seafood Pasta</p>
+                <div class="mini-meal mini-seafood"></div>
+              </article>
+
+              <article class="planner-day">
+                <h3>Friday</h3>
+                <p>Chicken Alfredo</p>
+                <div class="mini-meal mini-alfredo"></div>
+              </article>
+
+              <article class="planner-day muted-day">
+                <h3>Saturday</h3>
+                <p>Open to choose</p>
+                <div class="mini-placeholder"></div>
+              </article>
+            </div>
+
+            <a href="meal_planner.html" class="planner-cta">Open Meal Planner</a>
+          </section>
+        </div>
+
+        <aside class="right-column">
+          <section class="panel side-panel grocery-panel">
+            <h2>Grocery List</h2>
+            <div class="grocery-content">
+              <ul class="grocery-items">
+                <li><span class="tick checked"></span>Bananas</li>
+                <li><span class="tick checked"></span>Chicken breast</li>
+                <li><span class="tick"></span>Ground beef</li>
+                <li><span class="tick"></span>Eggs</li>
+                <li><span class="tick"></span>Milk</li>
+              </ul>
+              <div class="note-card" aria-hidden="true">
+                <div class="note-top"></div>
+                <div class="note-line"></div>
+                <div class="note-line short"></div>
+                <div class="note-line"></div>
+              </div>
+            </div>
+            <a href="grocery_list.html" class="planner-cta small">Open Grocery List</a>
+          </section>
+
+          <section class="panel side-panel treats-panel">
+            <h2>Weekend Treats</h2>
+            <div class="treat-card">
+              <div class="treat-plate">🍰</div>
+            </div>
+            <div class="treat-card">
+              <div class="treat-plate">🍫</div>
+            </div>
+            <div class="treat-card">
+              <div class="treat-plate">🍪</div>
+            </div>
+          </section>
+        </aside>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
